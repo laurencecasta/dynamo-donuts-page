@@ -1,0 +1,169 @@
+/*Define variables*/
+/*Reset styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*Set fonts*/
+body {
+  font-family: "Inter", sans-serif;
+  /*Set dimensions*/
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/topping.jpg);
+  background-size: 100%;
+  background-position: left bottom;
+}
+
+@font-face {
+  font-family: "electrox";
+  src: url("../fonts/electrox.ttf");
+}
+/*Style navbar*/
+nav .navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #400dfa;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+nav .navbar .logo {
+  display: flex;
+}
+nav .navbar .logo:hover {
+  cursor: pointer;
+}
+nav .navbar .logo img {
+  max-height: 100px;
+  height: 11vw;
+  padding-left: 10px;
+}
+nav .navbar .logo .logo-name {
+  margin-left: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+nav .navbar .logo .logo-name h1 {
+  font-family: "electrox";
+  font-size: 3.2vw;
+  width: 40vw;
+  color: #fad91e;
+}
+nav .navbar ul {
+  list-style: none;
+  display: flex;
+}
+nav .navbar ul li {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 17px;
+  color: #fad91e;
+}
+nav .navbar ul li:hover {
+  background: #320cbb;
+  cursor: pointer;
+}
+
+/*Style headline*/
+.hero-image {
+  max-width: 100%;
+}
+.hero-image #headline-image {
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.headline .slogan-container .slogan {
+  display: flex;
+  justify-content: center;
+  color: #320cbb;
+  margin-top: -45vw;
+}
+.headline .slogan-container .slogan .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 42vw;
+  background: rgba(253, 92, 221, 0.9);
+  border-radius: 2.2px;
+  padding: 15px;
+}
+.headline .slogan-container .slogan .text-container #donuts {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.headline .slogan-container .slogan .text-container #stunned {
+  font-family: "electrox";
+  margin-left: 15px;
+  font-size: 45px;
+  color: #fad91e;
+}
+.headline .quote-container {
+  display: flex;
+  justify-content: center;
+  margin: 25vw auto 0;
+  color: #320cbb;
+}
+.headline .quote-container .quote {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.headline .quote-container .quote .text-container h3 {
+  padding: 54% 15px 3px;
+  font-weight: 400;
+  font-size: 20px;
+  background-image: url("../images/eating-donuts.jpg");
+  background-size: 100%;
+}
+.headline .quote-container .quote .text-container p {
+  padding: 3px 15px 15px;
+  background: #320cbb;
+  color: #fad91e;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+footer {
+  background: #320cbb;
+  margin-top: 5%;
+  color: #fad91e;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+footer .copyright {
+  height: fit-content;
+  padding: 10px;
+}
+footer .copyright span {
+  font-size: 15px;
+}
+footer .social {
+  display: flex;
+}
+footer .social a {
+  margin: auto 17px;
+  font-size: 20px;
+}
+footer .social a:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
