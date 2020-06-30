@@ -1,0 +1,176 @@
+/*Define variables*/
+$secondary-yellow: rgb(250, 217, 30);
+
+/*Reset styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+/*Set fonts*/
+body {
+  font-family: 'Inter', sans-serif;
+  /*Set dimensions*/
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/topping.jpg);
+  background-size: 100%;
+  background-position: left bottom;
+}
+
+@font-face {
+  font-family: 'electrox';
+  src: url('../fonts/electrox.ttf')
+}
+/*Style navbar*/
+nav {
+  .navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #400dfa;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    .logo {
+      display: flex;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        max-height: 100px;
+        height: 11vw;
+        padding-left: 10px;
+      }
+      .logo-name {
+        margin-left: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        h1 {
+          font-family: 'electrox';
+          font-size: 3.2vw;
+          width: 40vw;
+          color: $secondary-yellow;
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17px;
+        color: $secondary-yellow;
+        &:hover {
+          background: #320cbb;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/*Style headline*/
+.hero-image {
+  max-width: 100%;
+  #headline-image {
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.headline {
+  .slogan-container {
+    .slogan {
+      display: flex;
+      justify-content: center;
+      color: #320cbb;
+      margin-top: -45vw;
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 42vw;
+        background:rgba(253, 92, 221, 0.9);
+        border-radius: 2.2px;
+        padding: 15px;
+        #donuts {
+          font-family: 'Oswald', sans-serif;
+          font-size: 30px;
+        }
+        #stunned {
+          font-family: 'electrox';
+          margin-left: 15px;
+          font-size: 45px;
+          color: $secondary-yellow;
+        }
+      }
+    }
+  }
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    margin: 25vw auto 0;
+    color: #320cbb;
+    .quote {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      border-radius: 2px;
+      box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+      .text-container {
+        h3 {
+          padding: 54% 15px 3px;
+          font-weight: 400;
+          font-size: 20px;
+          background-image: url("../images/eating-donuts.jpg");
+          background-size: 100%;
+        }
+        p {
+          padding: 3px 15px 15px;
+          background: #320cbb;
+          color: $secondary-yellow;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #320cbb;
+  margin-top: 5%;
+  color: $secondary-yellow;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  .copyright {
+    height: fit-content;
+    padding: 10px;
+    span {
+      font-size: 15px;
+    }
+  }
+  .social {
+    display: flex;
+    a {
+      margin: auto 17px;
+      font-size: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
