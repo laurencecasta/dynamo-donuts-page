@@ -1,4 +1,4 @@
-const loadNav = (() => {
+const loadNav = () => {
   let nav = document.createElement('nav'); // Create nav element
   let navContainer = document.createElement('div'); // Create container
   navContainer.classList.add('navbar');
@@ -37,9 +37,12 @@ const loadNav = (() => {
   nav.appendChild(navContainer); // Append to nav
   document.getElementById('content').appendChild(nav); // Append to content
 
-})();
+  return {
+    about,
+  }
+}
 
-const loadHeadline = (() => {
+const loadHeadline = () => {
   let content = document.getElementById('content');
   
   // Load image
@@ -73,9 +76,9 @@ const loadHeadline = (() => {
   sloganContainer.appendChild(slogan);
   section.appendChild(sloganContainer);
   content.appendChild(section);
-})();
+};
 
-const loadQuote = (() => {
+const loadQuote = () => {
   let content = document.getElementById('content');
   let section = document.querySelector('section');
 
@@ -96,9 +99,9 @@ const loadQuote = (() => {
   quote.appendChild(textContainer);
   quoteContainer.appendChild(quote);
   section.appendChild(quoteContainer);
-})();
+}
 
-const loadFooter = (() => {
+const loadFooter = () => {
   let content = document.getElementById('content');
   let footer = document.createElement('footer');
 
@@ -136,13 +139,13 @@ const loadFooter = (() => {
   footer.appendChild(social);
 
   content.appendChild(footer);
-})();
+}
 
-const loadAll = (() => {
+const loadAll = () => {
   loadNav();
   loadHeadline();
   loadQuote();
   loadFooter();
-})();
+};
 
-export { loadAll };
+export { loadAll, loadNav };
