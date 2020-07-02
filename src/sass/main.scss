@@ -1,5 +1,7 @@
 /* Import modules */
 @use 'buttons';
+@use 'about';
+@use 'menu';
 
 /*Define variables*/
 $secondary-yellow: rgb(250, 217, 30);
@@ -187,34 +189,6 @@ footer {
       &:hover {
         cursor: pointer;
       }
-    }
-  }
-}
-
-/*Style about section*/
-
-.about {
-  background-image: url(../images/topping.jpg);
-  background-size: cover;
-  background-position: left bottom;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  margin-top: 7vh;
-  padding-top: 10vw;
-  padding-bottom: 8vw;
-  color: #320cbb;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  .text-container {
-    width: 27vw;
-    background: rgba(253, 92, 221, 0.9);
-    padding: 15px;
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
-    border-radius: 2px;
-    h1{
-      font-weight: 500;
     }
   }
 }

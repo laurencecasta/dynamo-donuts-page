@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadAbout();
     e.target.classList.toggle('tab-pressed');
   });
+
+  let menu = document.getElementById('menu'); // Add event listener for menu tab
 });
