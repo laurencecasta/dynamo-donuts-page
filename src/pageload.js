@@ -6,6 +6,7 @@ const loadNav = () => {
   // Add logo
   let logo = document.createElement('div');
   logo.classList.add('logo');
+  logo.setAttribute('id', 'logo');
   let logoImg = document.createElement('img'); // Add image
   logoImg.src = 'images/dynamodonut.svg';
   let logoWordsContainer = document.createElement('div'); // Add words
@@ -42,18 +43,15 @@ const loadNav = () => {
   }
 }
 
+const loadChangingContent = () => {
+  let changingContent = document.createElement('div');
+  changingContent.setAttribute('id', 'changing-content');
+  content.appendChild(changingContent);
+}
+
 const loadHeadline = () => {
   let content = document.getElementById('content');
-  
-  // Load image
-  let imgContainer = document.createElement('div');
-  imgContainer.classList.add('hero-image');
-  let img = document.createElement('img');
-  img.src = 'images/donuts.jpg';
-  img.setAttribute('id', 'headline-image');
-  imgContainer.appendChild(img);
-  
-  content.appendChild(imgContainer);
+  let changingContent = document.getElementById('changing-content');
 
   // Add slogan
   let section = document.createElement('section');
@@ -75,7 +73,8 @@ const loadHeadline = () => {
   slogan.appendChild(textContainer);
   sloganContainer.appendChild(slogan);
   section.appendChild(sloganContainer);
-  content.appendChild(section);
+
+  changingContent.appendChild(section)
 };
 
 const loadQuote = () => {
@@ -143,9 +142,10 @@ const loadFooter = () => {
 
 const loadAll = () => {
   loadNav();
+  loadChangingContent();
   loadHeadline();
   loadQuote();
   loadFooter();
 };
 
-export { loadAll, loadNav };
+export { loadAll, loadNav, loadHeadline, loadQuote };

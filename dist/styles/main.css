@@ -1,8 +1,24 @@
+.tab-pressed {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 17px;
+  color: #fad91e;
+  border-bottom: 2px solid #fad91e;
+}
+.tab-pressed:hover {
+  background: #320cbb;
+  cursor: pointer;
+}
+
+/* Import modules */
 /*Define variables*/
 /*Reset styles*/
 * {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 html {
@@ -16,9 +32,11 @@ body {
   /*Set dimensions*/
   display: flex;
   flex-direction: column;
-  background-image: url(../images/topping.jpg);
-  background-size: 100%;
-  background-position: left bottom;
+  min-height: 100vh;
+}
+
+#content {
+  min-height: 100vh;
 }
 
 @font-face {
@@ -57,7 +75,7 @@ nav .navbar .logo .logo-name {
 nav .navbar .logo .logo-name h1 {
   font-family: "electrox";
   font-size: 3.2vw;
-  width: 40vw;
+  width: 20vw;
   color: #fad91e;
 }
 nav .navbar ul {
@@ -71,27 +89,32 @@ nav .navbar ul li {
   justify-content: center;
   font-size: 17px;
   color: #fad91e;
+  min-width: 60px;
+  text-align: center;
 }
 nav .navbar ul li:hover {
   background: #320cbb;
   cursor: pointer;
 }
 
-/*Style headline*/
-.hero-image {
-  max-width: 100%;
-}
-.hero-image #headline-image {
-  max-width: 100%;
-  position: relative;
-  z-index: -1;
+#changing-content {
+  padding-bottom: 40px;
+  min-height: 87.25vh;
 }
 
+.headline .slogan-container {
+  margin-top: 7vh;
+  background-image: url("../images/donuts.jpg");
+  background-size: 100%;
+  background-position: left center;
+  background-attachment: fixed;
+  padding-top: 17vh;
+  padding-bottom: 17vh;
+}
 .headline .slogan-container .slogan {
   display: flex;
   justify-content: center;
   color: #320cbb;
-  margin-top: -45vw;
 }
 .headline .slogan-container .slogan .text-container {
   display: flex;
@@ -115,14 +138,21 @@ nav .navbar ul li:hover {
 .headline .quote-container {
   display: flex;
   justify-content: center;
-  margin: 25vw auto 0;
+  padding: 10vw auto;
   color: #320cbb;
+  background-image: url(../images/topping.jpg);
+  background-size: 100%;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 .headline .quote-container .quote {
   display: flex;
   justify-content: center;
   width: 30%;
   border-radius: 2px;
+}
+.headline .quote-container .quote .text-container {
+  margin: 5vw auto;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .headline .quote-container .quote .text-container h3 {
@@ -142,11 +172,13 @@ nav .navbar ul li:hover {
 
 footer {
   background: #320cbb;
-  margin-top: 5%;
+  margin-top: -40px;
+  clear: both;
   color: #fad91e;
   height: fit-content;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 footer .copyright {
   height: fit-content;
@@ -164,6 +196,33 @@ footer .social a {
 }
 footer .social a:hover {
   cursor: pointer;
+}
+
+/*Style about section*/
+.about {
+  background-image: url(../images/topping.jpg);
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+  padding-top: 10vw;
+  padding-bottom: 8vw;
+  color: #320cbb;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.about .text-container {
+  width: 27vw;
+  background: rgba(253, 92, 221, 0.9);
+  padding: 15px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+}
+.about .text-container h1 {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
