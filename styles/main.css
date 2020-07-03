@@ -283,7 +283,7 @@ footer .social a:hover {
   color: #d3b929;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .navbar {
     flex-direction: column;
   }
