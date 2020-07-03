@@ -46,6 +46,56 @@
   font-weight: 500;
 }
 
+/* Style menu page */
+@media screen and (max-width: 870px) {
+  .menu-container {
+    flex-direction: column;
+  }
+  .menu-container .items-container {
+    margin: 10px auto 0;
+  }
+}
+.menu-section {
+  min-height: 60vh;
+  background-image: url(../images/topping.jpg);
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7vh;
+  padding-top: 0;
+  padding-bottom: 27.5vh;
+  color: #320cbb;
+  z-index: 1;
+}
+.menu-section h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin: 0 auto 20px;
+  background: rgba(250, 217, 30, 0.76);
+  width: 27vw;
+  max-height: 44.5px;
+}
+.menu-section .menu-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-section .menu-container div {
+  width: 310px;
+  text-align: center;
+  background: rgba(253, 92, 221, 0.9);
+  padding-bottom: 10px;
+}
+.menu-section .menu-container div h2 {
+  font-family: "Oswald", sans-serif;
+}
+.menu-section .menu-container div pre {
+  font-family: "Inter", sans-serif;
+}
+
 /* Import modules */
 /*Define variables*/
 /*Reset styles*/
@@ -123,7 +173,7 @@ nav .navbar ul li {
   justify-content: center;
   font-size: 17px;
   color: #fad91e;
-  min-width: 60px;
+  min-width: 102px;
   text-align: center;
 }
 nav .navbar ul li:hover {
@@ -139,8 +189,7 @@ nav .navbar ul li:hover {
 .headline .slogan-container {
   margin-top: 7vh;
   background-image: url("../images/donuts.jpg");
-  background-size: 100%;
-  background-position: left center;
+  background-size: cover;
   background-attachment: fixed;
   padding-top: 17vh;
   padding-bottom: 17vh;
@@ -175,7 +224,7 @@ nav .navbar ul li:hover {
   padding: 10vw auto;
   color: #320cbb;
   background-image: url(../images/topping.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: left bottom;
   background-attachment: fixed;
 }
@@ -230,6 +279,7 @@ footer .social a {
 }
 footer .social a:hover {
   cursor: pointer;
+  color: #d3b929;
 }
 
 /*# sourceMappingURL=main.css.map */
