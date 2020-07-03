@@ -26,12 +26,12 @@ const loadNav = () => {
   let menu = document.createElement('li');
   menu.setAttribute('id', 'menu');
   menu.textContent = 'MENU';
-  let order = document.createElement('li');
+  /* let order = document.createElement('li');
   order.setAttribute('id', 'order');
-  order.textContent = 'CONTACT';
+  order.textContent = 'CONTACT'; */
   list.appendChild(about);
   list.appendChild(menu);
-  list.appendChild(order);
+  //list.appendChild(order);
 
   navContainer.appendChild(logo); // Append to navContainer
   navContainer.appendChild(list);
