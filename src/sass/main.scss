@@ -79,7 +79,7 @@ nav {
         justify-content: center;
         font-size: 17px;
         color: $secondary-yellow;
-        min-width: 60px;
+        min-width: 102px;
         text-align: center;
         &:hover {
           background: #320cbb;
@@ -99,8 +99,7 @@ nav {
   .slogan-container {
     margin-top: 7vh;
     background-image: url('../images/donuts.jpg');
-    background-size: 100%;
-    background-position: left center;
+    background-size: cover;
     background-attachment: fixed;
     padding-top: 17vh;
     padding-bottom: 17vh;
@@ -135,7 +134,7 @@ nav {
     padding: 10vw auto;
     color: #320cbb;
     background-image: url(../images/topping.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: left bottom;
     background-attachment: fixed;
     .quote {
@@ -188,6 +187,7 @@ footer {
       font-size: 20px;
       &:hover {
         cursor: pointer;
+        color: rgb(211, 185, 41);
       }
     }
   }

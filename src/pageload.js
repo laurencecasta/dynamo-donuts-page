@@ -28,7 +28,7 @@ const loadNav = () => {
   menu.textContent = 'MENU';
   let order = document.createElement('li');
   order.setAttribute('id', 'order');
-  order.textContent = 'ORDER';
+  order.textContent = 'CONTACT';
   list.appendChild(about);
   list.appendChild(menu);
   list.appendChild(order);
